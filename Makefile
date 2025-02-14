@@ -82,7 +82,7 @@ poetry.lock: pyproject.toml
 	@poetry lock
 	@touch poetry.lock
 	@git add poetry.lock
-	@poetry install --sync --with dev,lint,test,codespell
+	@poetry install --with dev,lint,test,codespell
 
 ## Refresh lock
 lock: poetry.lock
